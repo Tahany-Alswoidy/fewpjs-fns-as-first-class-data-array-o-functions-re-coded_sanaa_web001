@@ -36,5 +36,5 @@ function exerciseDog(dogName ,dogBreed){
 // 	  exerciseArray.push(routine[i](dogName,dogBreed));
 // 	  routine[i](dogName,dogBreed);
 // }
-	return exerciseArray;
+// 	return exerciseArray;
 }
