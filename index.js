@@ -32,5 +32,8 @@ let routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
 function exerciseDog(dogName ,dogBreed,routines=routine){
 //   // let routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
 // 	routines.map(exercise=>exercise(dogName,dogBreed));
+routines.forEach(exercise=>{
+  exercise(dogName,dogBreed);
+})
 
 }
