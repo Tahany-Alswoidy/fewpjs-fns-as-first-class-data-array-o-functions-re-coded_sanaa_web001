@@ -29,12 +29,12 @@ return `Unleash ${dogName} the ${dogBreed}`;
 
 }
 let routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
-function exerciseDog(dogName ,dogBreed,routine){
+function exerciseDog(dogName ,dogBreed){
 	let exerciseArray= [];
-	
-	for(let i = 0;i<routine.length;i++){
-	  exerciseArray.push(routine[i](dogName,dogBreed));
-	  routine[i](dogName,dogBreed);
-}
+	routine.map(exercise=>exerciseArray.push(exercise));
+// 	for(let i = 0;i<routine.length;i++){
+// 	  exerciseArray.push(routine[i](dogName,dogBreed));
+// 	  routine[i](dogName,dogBreed);
+// }
 	return exerciseArray;
 }
