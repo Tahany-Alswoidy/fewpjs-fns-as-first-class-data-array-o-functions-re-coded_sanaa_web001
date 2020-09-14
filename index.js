@@ -29,8 +29,8 @@ return `Unleash ${dogName} the ${dogBreed}`;
 
 }
 let routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
-function exerciseDog(dogName ,dogBreed,routine=routine){
+function exerciseDog(dogName ,dogBreed,routines=routine){
   // let routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
-	routine.map(exercise=>exercise(dogName,dogBreed));
+	routines.map(exercise=>exercise(dogName,dogBreed));
 
 }
