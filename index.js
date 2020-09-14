@@ -30,7 +30,7 @@ return `Unleash ${dogName} the ${dogBreed}`;
 }
 let routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
 function exerciseDog(dogName ,dogBreed,routines=routine){
-  // let routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
-	routines.map(exercise=>exercise(dogName,dogBreed));
+//   // let routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
+// 	routines.map(exercise=>exercise(dogName,dogBreed));
 
 }
