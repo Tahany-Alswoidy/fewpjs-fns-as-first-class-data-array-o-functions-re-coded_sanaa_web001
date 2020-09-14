@@ -35,6 +35,7 @@ function exerciseDog(dogName ,dogBreed,routines=routine){
 // 	routines.map(exercise=>exercise(dogName,dogBreed));
 routines.forEach(exercise=>{
   exercise(dogName,dogBreed);
+  successMessage.push(exercise(dogName,dogBreed));
 })
-
+return successMessage;
 }
