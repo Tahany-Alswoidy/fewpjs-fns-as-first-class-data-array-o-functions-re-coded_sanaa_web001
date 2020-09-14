@@ -31,7 +31,7 @@ return `Unleash ${dogName} the ${dogBreed}`;
 let routine=[wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
 function exerciseDog(dogName ,dogBreed){
 	let exerciseArray= [];
-	routine.map(exercise=>exerciseArray.push(exercise));
+	routine.map(exercise=>exerciseArray.push(exercise(dogName,dogBreed)));
 // 	for(let i = 0;i<routine.length;i++){
 // 	  exerciseArray.push(routine[i](dogName,dogBreed));
 // 	  routine[i](dogName,dogBreed);
